@@ -29,7 +29,7 @@ func main() {
 			t1 := time.Date(exp[0], time.Month(exp[1]), exp[2], 0, 0, 0, 0, time.Local)
 			t2 := time.Date(today[0], time.Month(today[1]), today[2], 0, 0, 0, 0, time.Local)
 			days := t1.Sub(t2).Hours() / 24
-			fmt.Print(days)
+			fmt.Print(int(days))
 		}
 	}
 }
